@@ -3,57 +3,128 @@
 @tailwind utilities;
 
 @layer components {
-    .link{
-        @apply cursor-pointer hover:underline;
-    }
-    .button{
-        @apply p-2 text-xs md:text-sm bg-gradient-to-b from-yellow-200
+  .link {
+    @apply cursor-pointer hover:underline;
+  }
+  .button {
+    @apply p-2 text-xs md:text-sm bg-gradient-to-b from-yellow-200
          to-yellow-400 cursor-pointer border border-yellow-300 rounded-sm 
          focus:outline-none focus:ring-2 focus:ring-yellow-500 
          active:from-yellow-500;
+  }
+
+  .fb {
+    background-position: 0 0;
+  }
+  .fb:hover {
+    background-position: 0 190px;
+  }
+  .ig {
+    background-position: 0 -38px;
+  }
+  .quotes {
+    color: #fff;
+  }
+  .ig:hover {
+    background-position: 0 152px;
+  }
+  .linkedIn {
+    background-position: 0 -76px;
+  }
+  .linkedIn:hover {
+    background-position: 0 114px;
+  }
+  .twitter {
+    background-position: 0 -114px;
+  }
+  .twitter:hover {
+    background-position: 0 76px;
+  }
+  .youtube {
+    background-position: 0 -152px;
+  }
+  .youtube:hover {
+    background-position: 0 38px;
+  }
+
+  a div {
+    /* margin-left: 10px; */
+    display: inline-block;
+    background-size: 100%;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+  }
+
+  .animie {
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+  .scroll-top {
+    color: white;
+    float: right;
+    width: 30px;
+    background-color: black;
+    border-radius: 4px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 90px;
+    right: 50px;
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease-out;
+  }
+  .scroll-top:hover {
+    box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+  }
+  .logo-anime {
+    box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+    border-radius: 50%;
+  }
+  .logo-anime:hover {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  }
+  .text-shadow {
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em darkblue;
+  }
+  @keyframes example {
+    0% {
+      background-color: red;
     }
-
-    .fb {
-        background-position: 0 0;
-      }
-      .fb:hover {
-        background-position: 0 190px;
-      }
-      .ig {
-        background-position: 0 -38px;
-      }
-      .quotes {
-        color: #fff;
-      }
-      .ig:hover {
-        background-position: 0 152px;
-      }
-      .linkedIn {
-        background-position: 0 -76px;
-      }
-      .linkedIn:hover {
-        background-position: 0 114px;
-      }
-      .twitter {
-        background-position: 0 -114px;
-      }
-      .twitter:hover {
-        background-position: 0 76px;
-      }
-      .youtube {
-        background-position: 0 -152px;
-      }
-      .youtube:hover {
-        background-position: 0 38px;
-      }
-      
-      a div {
-        /* margin-left: 10px; */
-        display: inline-block;
-        background-size: 100%;
-        width: 38px;
-        height: 38px;
-        cursor: pointer;
-      }
-
+    25% {
+      background-color: yellow;
+    }
+    50% {
+      background-color: blue;
+    }
+    100% {
+      background-color: green;
+    }
+  }
+  .text-animie {
+    position: relative;
+    animation-name: textAnimie;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes textAnimie {
+    0% {
+      color: red;
+    }
+    25% {
+      color: yellow;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: green;
+    }
+  }
 }

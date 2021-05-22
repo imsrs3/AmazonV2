@@ -14,6 +14,9 @@ function Banner() {
             interval={5000}
             >
                 <div>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2021/X-site/Multititle/May/M17/non-reg/3000x1200_Hero-Tall_P._CB668328610_.jpg" alt="" />
+                </div>
+                <div>
                     <img src="https://links.papareact.com/gi1" alt="" />
                 </div>
                 <div>
@@ -21,6 +24,12 @@ function Banner() {
                 </div>
                 <div>
                     <img src="https://links.papareact.com/7ma" alt="" />
+                </div>
+                <div>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonDevices/2019/May/1X_GW_PC_3000x1200._CB669526939_.jpg" alt="" />
+                </div>
+                <div>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/CEPC/Electronics/May-BAU/D23214869_IN_CEPC_BAU_activation_graphics_May21_3000x12000.5x._CB669264751_.jpg" alt="" />
                 </div>
              </Carousel>      
             

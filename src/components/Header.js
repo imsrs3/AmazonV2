@@ -15,7 +15,7 @@ const items = useSelector(selectItems);
 
     return (
         <header>
-            <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2"> 
+            <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2 "> 
                 <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
                     <Image src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
                     width={150} height={40} objectFit='contain' onClick={()=> router.push('/')}
@@ -52,9 +52,9 @@ const items = useSelector(selectItems);
                 </div>
             </div>
 {/* Bottom nav */}
-            <div className="flex items-center space-x-3 p-2 pl-6 text-white bg-amazon_blue-light text-sm">
+            <div className="flex items-center space-x-3 p-2 pl-6 text-white bg-amazon_blue-light text-sm text-shadow">
                 <p className="link flex items-center"> 
-                    <MenuIcon className="h-6 mr-1" />
+                    <MenuIcon className="h-6 mr-1 shadow-none" />
                     All
                 </p>
                 <p className="link">Prime Video</p>
@@ -66,7 +66,7 @@ const items = useSelector(selectItems);
                 <p className="link hidden lg:inline-flex">Buy Again</p>
                 <p className="link hidden lg:inline-flex">Shopper Toolkit</p>
                 <p className="link hidden lg:inline-flex">Health & Personal Care</p>
-                <p className="link inline-flex font-bold">
+                <p className="link inline-flex font-bold text-animie">
                     <a href="https://sanky-flix-50d72.web.app/" target="_blank">Netflix</a></p> 
 
             </div>
