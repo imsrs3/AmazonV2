@@ -12,6 +12,14 @@
          focus:outline-none focus:ring-2 focus:ring-yellow-500 
          active:from-yellow-500;
   }
+  li{
+    list-style: none;
+  }
+li > ul{
+  font-size:20px;
+  margin: 10px 0;
+  justify-content:space-between;
+}
 
   .fb {
     background-position: 0 0;
