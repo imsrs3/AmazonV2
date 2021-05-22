@@ -28,6 +28,10 @@ const items = useSelector(selectItems);
                 </div>
                 {/* Right hand side */}
                 <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
+                {session && (
+                        <Image src={session.user.image} loading="lazy" objectFit="contain" width={40} height={40}
+                        className="cursor-pointer br-50" />
+                    )}
                     <div className=" link" onClick={!session ? signIn : signOut}>
                         <p>
                             {
@@ -69,6 +73,9 @@ const items = useSelector(selectItems);
                 <p className="link inline-flex font-bold text-animie">
                     <a href="https://sanky-flix-50d72.web.app/" target="_blank">Netflix</a></p> 
 
+                    {session && (
+                        <button className="sign-out" title="Scroll to Top" onClick={signOut}>Sign Out</button>
+                    )}
             </div>
         </header>
     )

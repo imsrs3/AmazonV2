@@ -46,6 +46,9 @@
   .youtube:hover {
     background-position: 0 38px;
   }
+  .br-50{
+    border-radius:50%;
+  }
 
   a div {
     /* margin-left: 10px; */
@@ -81,11 +84,22 @@
   .scroll-top:hover {
     box-shadow: 0 0 6px rgba(35, 173, 278, 1);
   }
+  .sign-out{
+    border-radius:4px;
+    outline:none;
+    position: absolute;
+    right: 20px;
+    background-color: black;
+    padding: 5px 10px;
+    color: white;
+    box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+    transition: all 200ms ease-out;
+  }
   .logo-anime {
     box-shadow: 0 0 6px rgba(35, 173, 278, 1);
     border-radius: 50%;
   }
-  .logo-anime:hover {
+  .logo-anime:hover, .sign-out:hover {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   }
   .text-shadow {
