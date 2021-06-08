@@ -16,7 +16,7 @@ export const basketSlice = createSlice({
       let newBasket = [...state.items];
       if(index >=0){
         // item exist in basket
-        newBasket.splice(index,1);
+        newBasket.splice(index,1); // at position index of basket remove 1 elements
       }
       else{
         console.warn(

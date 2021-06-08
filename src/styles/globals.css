@@ -19,6 +19,7 @@ li > ul{
   font-size:20px;
   margin: 10px 0;
   justify-content:space-between;
+  @apply cursor-pointer hover:underline;
 }
 
   .fb {
@@ -107,7 +108,7 @@ li > ul{
     box-shadow: 0 0 6px rgba(35, 173, 278, 1);
     border-radius: 50%;
   }
-  .logo-anime:hover, .sign-out:hover {
+  .logo-anime:hover{
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   }
   .text-shadow {

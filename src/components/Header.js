@@ -70,7 +70,7 @@ const items = useSelector(selectItems);
                 {session ? (
                         <Image src={session.user.image} loading="lazy" objectFit="contain" width={40} height={40}
                         className="cursor-pointer br-50" />
-                    ): (<p onClick={signIn} className="text-md lg:hidden">Sign In</p>)}
+                    ): (<p onClick={signIn} className="text-md link lg:hidden">Sign In</p>)}
                     <div className=" link hidden lg:block" onClick={!session ? signIn : signOut}>
                         <p>
                             {
